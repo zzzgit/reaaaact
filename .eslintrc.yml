@@ -1,0 +1,15 @@
+env:
+  browser: true
+  es2021: true
+extends:  ["janus/ts", "plugin:react/recommended", "plugin:react/jsx-runtime", "janus/security" ]
+overrides: []
+parserOptions:
+  ecmaVersion: latest
+  sourceType: module
+  # 此處重新設置
+  project: ./tsconfig.json
+plugins:
+  - react
+rules: 
+  new-cap: off
+  react/no-unknown-property: ["error", { "ignore": ["css"] }]
