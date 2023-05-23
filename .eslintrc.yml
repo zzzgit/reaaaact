@@ -10,6 +10,4 @@ parserOptions:
   project: ./tsconfig.json
 plugins:
   - react
-rules: 
-  new-cap: off
-  react/no-unknown-property: ["error", { "ignore": ["css"] }]
+rules:  {}
